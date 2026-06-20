@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | L Rakshana</title>
+  <meta name="description" content="A personal portfolio showcasing projects, skills, and an accessible contact form. Built with semantic HTML5 and WCAG-friendly design." />
+  <meta name="keywords" content="portfolio, accessible website, semantic HTML5, web developer, UX design" />
+  <meta name="author" content="L Rakshana" />
+  <link rel="canonical" href="https://example.com/" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html">L Rakshana</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav id="primary-navigation" class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main" role="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="eyebrow">Accessible Web Portfolio</p>
+        <h1 id="hero-heading">Hi, I’m L Rakshana — I build inclusive digital experiences.</h1>
+        <p>Specializing in semantic HTML, user-friendly design, and performance-optimized front-end development.</p>
+        <a class="primary-button" href="projects.html">View Projects</a>
+      </div>
+    </section>
+
+    <section class="summary" aria-labelledby="summary-heading">
+      <div class="container">
+        <h2 id="summary-heading">What I Do</h2>
+        <p>I create modern websites using semantic HTML5, accessible ARIA patterns, and responsive design that work for everyone.</p>
+        <div class="feature-grid">
+          <article class="feature-card" aria-labelledby="feature-1-title">
+            <h3 id="feature-1-title">Semantic Markup</h3>
+            <p>Clean, meaningful structure with <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+          </article>
+          <article class="feature-card" aria-labelledby="feature-2-title">
+            <h3 id="feature-2-title">Accessibility</h3>
+            <p>WCAG-ready navigation, forms, and contrast for all users and assistive technologies.</p>
+          </article>
+          <article class="feature-card" aria-labelledby="feature-3-title">
+            <h3 id="feature-3-title">Performance</h3>
+            <p>Optimized structure, lightweight assets, and fast load behavior across devices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="site-aside" role="complementary" aria-labelledby="aside-heading">
+    <div class="container">
+      <h2 id="aside-heading">Quick Links</h2>
+      <ul>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="projects.html">Latest work</a></li>
+        <li><a href="contact.html">Get in touch</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 L Rakshana. Built with accessible HTML5 semantics.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

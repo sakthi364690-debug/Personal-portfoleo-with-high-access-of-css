@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Your Name</title>
+  <meta name="description" content="A showcase of accessible, semantic web projects built with modern HTML5 best practices." />
+  <link rel="canonical" href="https://example.com/projects.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html">Your Name</a>
+      <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main" role="main">
+    <section class="project-list" aria-labelledby="projects-heading">
+      <div class="container">
+        <h1 id="projects-heading">Recent projects</h1>
+        <div class="project-grid">
+          <article class="project-card" aria-labelledby="project-1-title">
+            <h2 id="project-1-title">Accessible Portfolio Template</h2>
+            <p>A semantic HTML5 portfolio website with strong keyboard navigation and ARIA-enhanced structure.</p>
+          </article>
+          <article class="project-card" aria-labelledby="project-2-title">
+            <h2 id="project-2-title">Inclusive Contact Form</h2>
+            <p>An accessible contact form built with clear labels, fieldset groups, and form validation suggestions.</p>
+          </article>
+          <article class="project-card" aria-labelledby="project-3-title">
+            <h2 id="project-3-title">SEO-Focused Landing Page</h2>
+            <p>A lightweight landing page with optimized metadata, structured heading hierarchy, and performant layout.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Your Name.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

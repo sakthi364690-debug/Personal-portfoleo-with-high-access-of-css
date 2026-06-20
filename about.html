@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Your Name</title>
+  <meta name="description" content="Learn more about Your Name, a web developer focused on accessibility, semantic HTML, and user-centered design." />
+  <link rel="canonical" href="https://example.com/about.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html">Your Name</a>
+      <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main" role="main">
+    <article class="content-card" aria-labelledby="about-heading">
+      <div class="container">
+        <header>
+          <p class="eyebrow">About Me</p>
+          <h1 id="about-heading">Designing digital experiences that work for everyone</h1>
+        </header>
+        <section aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Experience</h2>
+          <p>I am a web developer with a passion for accessible and semantic design. My work focuses on inclusive navigation, keyboard support, and clear content structure.</p>
+        </section>
+
+        <section aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills</h2>
+          <ul>
+            <li>HTML5 semantic structure</li>
+            <li>WCAG AA accessibility</li>
+            <li>Responsive design</li>
+            <li>SEO-friendly markup</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Your Name.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

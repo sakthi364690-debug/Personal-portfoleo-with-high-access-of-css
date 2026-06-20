@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Your Name</title>
+  <meta name="description" content="Contact Your Name via an accessible, keyboard-friendly form with ARIA support and semantic markup." />
+  <link rel="canonical" href="https://example.com/contact.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html">Your Name</a>
+      <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main" role="main">
+    <article class="content-card" aria-labelledby="contact-heading">
+      <div class="container">
+        <header>
+          <p class="eyebrow">Contact Me</p>
+          <h1 id="contact-heading">Send a message</h1>
+          <p>If you’d like to discuss a project or collaboration, this accessible form makes it easy.</p>
+        </header>
+
+        <form class="contact-form" action="#" method="post" novalidate aria-labelledby="contact-heading">
+          <fieldset>
+            <legend>Contact information</legend>
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required aria-required="true" placeholder="Jane Doe" />
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required aria-required="true" placeholder="jane@example.com" />
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Project inquiry" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Message details</legend>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <div class="form-field checkbox-field">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">Subscribe to updates</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="primary-button">Send message</button>
+        </form>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Your Name.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
